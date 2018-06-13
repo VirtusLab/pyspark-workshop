@@ -7,7 +7,7 @@ If you are using jupyter available in the cluster then you can skip this setup. 
 
 2. Create conda environment with packages from requirements file
 ```bash
-> Conda create --name pyspark_env --file environment/requirements.txt python=3.5
+> conda create --name pyspark_env --file environment/requirements.txt python=3.5
 ```
 When prompted to install lots of pacakges click Enter to accept.
 

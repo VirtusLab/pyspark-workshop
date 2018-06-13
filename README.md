@@ -5,13 +5,13 @@ If you are using jupyter available in the cluster then you can skip this setup. 
 
 1. Install anaconda https://conda.io/docs/user-guide/install/index.html
 
-2. create conda environment with packages from requirements file
+2. Create conda environment with packages from requirements file
 ```bash
-> conda create --name pyspark_env --file environment/requirements.txt python=3.5
+> Conda create --name pyspark_env --file environment/requirements.txt python=3.5
 ```
 When prompted to install lots of pacakges click Enter to accept.
 
-3. activate newly created conda environment
+3. Activate newly created conda environment
 ```bash
 > source activate pyspark_env
 ```

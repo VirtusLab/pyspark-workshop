@@ -1,0 +1,1 @@
+jupyter nbconvert pyspark_basics.ipynb --to slides --post serve

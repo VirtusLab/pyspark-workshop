@@ -1,7 +1,7 @@
-# Distributes Big Data Processing workshop
+# Distributed Big Data Processing pySpark  workshop
 
 ## Local setup
-If you are using jupyter available in the cluster then you can skip this setup. It is useful for people wanting to run workshop exercises locally.
+NOTE: If you are using jupyter available in the cluster you can skip this setup. It is useful for people wanting to run workshop exercises locally.
 
 1. Install anaconda https://conda.io/docs/user-guide/install/index.html
 

@@ -10,6 +10,7 @@ def getSession(local = True):
 		print ('Created "item_prices" view from CSV file')
 		return spark
 	else:
+		spark.stop()
 		spark = SparkSession.builder.appName("workshop").config("spark.master", "yarn").enableHiveSupport().getOrCreate()
 		print ("Created YARN SparkSession")
 		return spark

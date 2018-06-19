@@ -1,8 +1,17 @@
 from pyspark.sql import SparkSession
+import os, sys, pyspark
 
 def getSession(local = True):
+	os.environ['PYSPARK_PYTHON'] = sys.executable
+	spark_home = os.path.dirname(pyspark.__file__)
+	# Workaround for spark bug
+	os.makedirs(spark_home + "\\RELEASE", exist_ok=True)
+
 	if (local):
-		spark =  SparkSession.builder.appName("DataMashup 2018 pySpark workshop").config("spark.master", "local[*]").getOrCreate()
+		spark =  SparkSession.builder.appName("DataMashup 2018 pySpark workshop")\
+			.config("spark.master", "local[*]")\
+			.config("spark.home", spark_home)\
+			.config("spark.pyspark.python", sys.executable).getOrCreate()
 		print ("Created local SparkSession")
 		spark.read.option("header", "true").csv("../data/sales.csv").createOrReplaceTempView("sales")
 		print ('Created "sales" view from CSV file')

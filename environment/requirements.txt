@@ -1,2 +1,2 @@
-pyspark=2.2.0=py35_0
+pyspark=2.2.2=py35_0
 jupyter=1.0.0=py35_0

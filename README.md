@@ -14,9 +14,14 @@ NOTE: If you are using jupyter available in the cluster you can skip this setup.
 > source activate pyspark_env
 ```
 
-4. Run jupyter notebook and open workshop exercises
+4. Run jupyter notebook
 ```bash
 > jupyter notebook
+```
+
+5. Open notebook with exercises
+```
+pySpark SQL exercises.ipynb
 ```
 
 ## Authors

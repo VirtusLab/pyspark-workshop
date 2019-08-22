@@ -8,7 +8,7 @@ def getSession(local = True):
 	os.makedirs(spark_home + "\\RELEASE", exist_ok=True)
 
 	if (local):
-		spark =  SparkSession.builder.appName("DataMashup 2018 pySpark workshop")\
+		spark =  SparkSession.builder.appName("pySpark for Data Science  workshop")\
 			.config("spark.master", "local[*]")\
 			.config("spark.home", spark_home)\
 			.config("spark.pyspark.python", sys.executable).getOrCreate()
